@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Địa Danh Nổi Tiếng Việt Nam</title>
+    <style>
+        /* Định dạng chung */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        main {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        main p {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* Khung iframe */
+        .map-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Bảng thông tin */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: none;
+            padding: 20px;
+            text-align: center;
+        }
+        th {
+            background: #2a5298;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        td {
+            font-size: 18px;
+            color: #444;
+            font-weight: 400;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tr:hover {
+            background: #e1ecf4;
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+
+        /* Nút cuộn lên đầu trang */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .scroll-top-btn:hover {
+            background: #1565c0;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Khám Phá Địa Danh Nổi Tiếng Việt Nam</h1>
+        <p>Danh sách các địa điểm đẹp và nổi bật nhất Việt Nam</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <p>Khám phá vẻ đẹp thiên nhiên và di sản văn hóa của Việt Nam qua bản đồ và bảng thông tin dưới đây.</p>
+
+        <!-- Khung iframe -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32091241.00444109!2d101.51332992190897!3d14.058324017953975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8de4ef1b1f%3A0xbde3f102bcf1d8f9!2zVmnhu4duIFbhuq9jIE5hbQ!5e0!3m2!1svi!2s!4v1700000000000" 
+                title="Bản đồ Việt Nam"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Bảng thông tin -->
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Địa Danh</th>
+                    <th>Vị Trí</th>
+                    <th>Liên Kết Tham Khảo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vịnh Hạ Long</td>
+                    <td>Quảng Ninh</td>
+                    <td><a href="https://vi.wikipedia.org/wiki/Vịnh_Hạ_Long" target="_blank">Xem thêm</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Phố cổ Hội An</td>
+                    <td>Quảng Nam</td>
+                    <td><a href="https://vi.wikipedia.org/wiki/Hội_An" target="_blank">Xem thêm</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Thánh địa Mỹ Sơn</td>
+                    <td>Quảng Nam</td>
+                    <td><a href="https://vi.wikipedia.org/wiki/Thánh_địa_Mỹ_Sơn" target="_blank">Xem thêm</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Đà Lạt</td>
+                    <td>Lâm Đồng</td>
+                    <td><a href="https://vi.wikipedia.org/wiki/Đà_Lạt" target="_blank">Xem thêm</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Nút cuộn lên đầu trang -->
+    <button class="scroll-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Trang Web Giới Thiệu Địa Danh Việt Nam. Thiết kế bởi Nhóm Bạn.</p>
+    </footer>
+</body>
+</html>
